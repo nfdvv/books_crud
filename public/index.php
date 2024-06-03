@@ -26,6 +26,8 @@ $books = mysqli_fetch_all($books);
             <th scope="col">Автор</th>
             <th scope="col">Дата публикации</th>
             <th scope="col">Жанр</th>
+            <th scope="col">Редактировать</th>
+            <th scope="col">Удалить</th>
         </tr>
         </thead>
         <tbody>
@@ -36,6 +38,8 @@ $books = mysqli_fetch_all($books);
             <td><?= $book[2] ?></td>
             <td><?= $book[3] ?></td>
             <td><?= $book[4] ?></td>
+            <td><a href="../app/show.php?id=<?= $book[0] ?>" class="btn btn-outline-warning">Редактировать</a></td>
+            <td><a href="../app/delete.php?id=<?= $book[0] ?>" class="btn btn-outline-danger">Удалить</a></td>
         </tr>
         <?php endforeach; ?>
         </tbody>
