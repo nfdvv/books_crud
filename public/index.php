@@ -58,7 +58,7 @@ $books = mysqli_fetch_all($books);
         </div>
         <div class="mb-3">
             <label class="form-label">Дата публикации</label>
-            <input class="form-control" name="publication" maxlength="4" minlength="4" type="number" placeholder="1851">
+            <input class="form-control" name="publication" type="number" max="2024" min="1700" placeholder="1851">
         </div>
         <div class="mb-3">
             <label class="form-label">Жанр</label>

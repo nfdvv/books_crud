@@ -34,7 +34,7 @@ $book = mysqli_fetch_assoc($book);
         </div>
         <div class="mb-3">
             <label class="form-label">Дата публикации</label>
-            <input class="form-control" name="publication" maxlength="4" minlength="4" type="number" value="<?= $book['publication'] ?>">
+            <input class="form-control" name="publication" type="number" max="2024" min="1700" value="<?= $book['publication'] ?>">
         </div>
         <div class="mb-3">
             <label class="form-label">Жанр</label>
